@@ -1,5 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Colors:
+    azul-tenue #363A52
+    azul-black #1A1D32
+    Light_Blue #1DBCF6 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: #1a1d32;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0.9rem;
+  .header_main {
+    .header_container {
+      width: 85vh;
+      .search_bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: #363a52;
+        border-color: #1a1d32;
+        border-radius: 0.6rem;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .nav_container {
+    background-color: #1a1d32;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 15vw;
+    justify-content: baseline;
+    align-items: center;
+    .logo_box {
+      display: flex;
+      height: 3rem;
+      width: 10rem;
+      margin: 1rem;
+      border-radius: 0.6rem;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+    .nav_box {
+      display: flex;
+      height: 3rem;
+      width: 10rem;
+      background-color: #363a52;
+      margin: 0.6rem;
+      border-radius: 0.6rem;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
 }
